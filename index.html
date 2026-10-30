@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey Typing Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>monkey typing</h1>
+        <p class="subtitle">Test your typing speed</p>
+
+        <div class="settings">
+            <button class="time-btn" data-time="15">15s</button>
+            <button class="time-btn" data-time="30">30s</button>
+            <button class="time-btn active" data-time="60">60s</button>
+            <button class="time-btn" data-time="120">120s</button>
+            <button class="time-btn" data-time="300">300s</button>
+        </div>
+
+        <div class="stats">
+            <div>
+                <small>TIME</small>
+                <h2 id="time">60</h2>
+            </div>
+            <div>
+                <small>WPM</small>
+                <h2 id="wpm">0</h2>
+            </div>
+            <div>
+                <small>ACCURACY</small>
+                <h2 id="accuracy">100%</h2>
+            </div>
+        </div>
+
+        <div id="words" class="typing-text"></div>
+
+        <textarea
+            id="typingInput"
+            placeholder="Click here and start typing..."
+            spellcheck="false"
+            autocomplete="off"
+        ></textarea>
+
+        <button id="restartBtn">↻ Restart Test</button>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

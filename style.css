@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #323437;
+    color: #d1d0c5;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 950px;
+}
+
+h1 {
+    color: #e2b714;
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #999;
+    margin-bottom: 35px;
+}
+
+.settings {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.time-btn {
+    background: #2c2e31;
+    color: #999;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.time-btn.active {
+    color: #e2b714;
+    outline: 1px solid #e2b714;
+}
+
+.stats {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 25px;
+}
+
+.stats small {
+    color: #999;
+}
+
+.stats h2 {
+    color: #e2b714;
+    font-size: 30px;
+    margin-top: 8px;
+}
+
+.typing-text {
+    background: #2c2e31;
+    padding: 30px;
+    border-radius: 10px;
+    font-size: 23px;
+    line-height: 1.9;
+    letter-spacing: 1px;
+    min-height: 220px;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+}
+
+.typing-text span.correct {
+    color: #e2b714;
+}
+
+.typing-text span.wrong {
+    color: #ff5c5c;
+    background: #512d32;
+}
+
+.typing-text span.current {
+    border-left: 2px solid #e2b714;
+}
+
+textarea {
+    width: 100%;
+    height: 110px;
+    padding: 20px;
+    font-size: 18px;
+    background: #2c2e31;
+    color: white;
+    border: 1px solid #646669;
+    border-radius: 8px;
+    resize: none;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #e2b714;
+}
+
+#restartBtn {
+    margin-top: 20px;
+    padding: 13px 25px;
+    background: #e2b714;
+    color: #323437;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+}
